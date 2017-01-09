@@ -11,13 +11,15 @@ public class CodeBlock {
         int bonus = 100;
 
 
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("Your final score was "+ highScore);
 
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
 
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("Your final score was "+ highScore);
     }
 
     public static int  calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
@@ -25,7 +27,6 @@ public class CodeBlock {
         if(gameOver){
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 2000;
-            System.out.println("Your final score was "+ finalScore);
             return finalScore;
         }
         else{
