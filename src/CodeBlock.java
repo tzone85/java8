@@ -54,19 +54,14 @@ public class CodeBlock {
 
     public static int calculateHighScorePosition(int score){
         if (score > 1000){
-           // return 1;
-            System.out.println(1);
+            return 1;
         }else if(score > 500 && score <= 1000){
-//            return 2;
-            System.out.println(2);
+            return 2;
         }else if (score > 100 && score <= 500){
-//            return 3;
-            System.out.println(3);
+            return 3;
         }else{
-            //return 4;
-            System.out.println(4);
+            return 4;
         }
-        return score;
     }
 
 }
