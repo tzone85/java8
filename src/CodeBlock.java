@@ -23,17 +23,17 @@ public class CodeBlock {
 
         System.out.println("\n\n");
 
-        displayHighScorePosition("John", 7);
-        calculateHighScorePosition(1500);
+        int highScoreNow = calculateHighScorePosition(1500);
+        displayHighScorePosition("Peter", highScoreNow);
 
-        displayHighScorePosition("Zoro", 50);
-        calculateHighScorePosition(900);
+        highScoreNow = calculateHighScorePosition(900);
+        displayHighScorePosition("Mncedi", highScoreNow);
 
-        displayHighScorePosition("Mncedi", 150);
-        calculateHighScorePosition(400);
+        highScoreNow = calculateHighScorePosition(150);
+        displayHighScorePosition("Mugabe", highScoreNow);
 
-        displayHighScorePosition("Thando", 800);
-        calculateHighScorePosition(50);
+        highScoreNow = calculateHighScorePosition(50);
+        displayHighScorePosition("Nokwazi", highScoreNow);
     }
 
     public static int  calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
